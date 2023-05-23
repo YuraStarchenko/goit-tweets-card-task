@@ -5,6 +5,8 @@ import { GlobalStyle } from '../GlobalStyle';
 import { Container } from './Container.styled';
 import { TweetsHeader } from './TweetsHeader/TweetsHeader';
 
+
+
 export const App = () => {
   return (
     <Container>

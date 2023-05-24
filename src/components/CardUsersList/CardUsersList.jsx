@@ -1,2 +1,3 @@
 
-export const CardUserList = () => {}
+export const CardUserList = () => {
+};

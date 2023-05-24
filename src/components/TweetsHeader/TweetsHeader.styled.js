@@ -35,6 +35,7 @@ export const Logo = styled.p`
 export const Text = styled.h1`
   font-family: 'Righteous';
   font-size: 30px;
+	margin-left: 5px;
 `;
 
 export const TextLink = styled.p`

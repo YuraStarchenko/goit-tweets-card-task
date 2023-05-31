@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import { CardUsersList } from 'components/CardUsersList/CardUsersList';
 import { Container } from '../../components/Container.styled';
 import Filter from '../../components/Filters/Filters';
-import ScrollToTopBtn from '../../components/ScrollBtn/ScrollBtn';
+import { ScrollBtn } from '../../components/ScrollBtn/ScrollBtn';
 import { LoadMore } from '../../components/LoadMore/LoadMore';
 import Loader from '../../components/Loader/Loader';
 import { BsArrowLeft } from 'react-icons/bs';
@@ -77,7 +77,7 @@ export const Tweets = () => {
               )}
             </>
           )}
-          <ScrollToTopBtn />
+          <ScrollBtn />
           {isLoading && <Loader />}
         </Container>
       </Section>

@@ -1,7 +1,7 @@
-import { formattingNumber } from 'helpers';
-import { Wrapper, Text } from './Info.styled';
+import { formattingNumber } from '../../../pages/helps';
+import { Wrapper, Text } from './info.styled.js';
 
-const Info = ({ user, followers, tweets }) => {
+export const Info = ({ user, followers, tweets }) => {
   return (
     <Wrapper>
       <Text as="h2">{user}</Text>
@@ -10,5 +10,3 @@ const Info = ({ user, followers, tweets }) => {
     </Wrapper>
   );
 };
-
-export default Info;

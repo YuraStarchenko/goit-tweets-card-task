@@ -1,8 +1,6 @@
 import { Img } from './Logo.styled';
-import logo from 'images/logo.png';
+import Logo from '../../../img/Logo.png';
 
-const Logo = () => {
-  return <Img src={logo} alt="Logo" />;
+export const Logos = () => {
+  return <Img src={Logo} alt="Logo" />;
 };
-
-export default Logo;

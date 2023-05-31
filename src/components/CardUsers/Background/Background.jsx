@@ -1,10 +1,10 @@
 import { Thumb, Img } from './Background.styled';
-import bg from 'images/bg.png';
+import picture1 from '../../../img/picture1.png';
 
 const Background = () => {
   return (
     <Thumb>
-      <Img src={bg} alt="Background" />
+      <Img src={picture1} alt="Background" />
     </Thumb>
   );
 };

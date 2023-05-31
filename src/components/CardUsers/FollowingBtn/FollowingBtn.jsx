@@ -1,6 +1,6 @@
-import { Button } from './FollowingButton.styled';
+import { Button } from './FollowingBtn.styled.js';
 
-const FollowingButton = ({ handleClick, following }) => {
+export const FollowingBtn = ({ handleClick, following }) => {
   const getBgColor = following => {
     return {
       backgroundColor: following ? '#5CD3A8' : '#EBD8FF',
@@ -20,5 +20,3 @@ const FollowingButton = ({ handleClick, following }) => {
     </Button>
   );
 };
-
-export default FollowingButton;

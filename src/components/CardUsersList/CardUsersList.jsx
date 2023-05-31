@@ -1,5 +1,5 @@
-import TweetCard from 'components/TweetCard';
-import { TweetBox, TweetItem } from './TweetList.styled';
+import { CardUsers } from 'components/CardUsers/CardUsers';
+import { TweetBox, TweetItem } from './CardUsersList.styled.js';
 
 export const CardUsersList = ({ filteredUsers }) => {
   return (
@@ -9,7 +9,7 @@ export const CardUsersList = ({ filteredUsers }) => {
           filteredUsers.map(({ id, user, avatar, followers, tweets }) => {
             return (
               <TweetItem key={id}>
-                <TweetCard
+                <CardUsers
                   id={id}
                   user={user}
                   avatar={avatar}

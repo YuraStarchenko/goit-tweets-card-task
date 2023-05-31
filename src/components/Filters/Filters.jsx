@@ -1,4 +1,4 @@
-import { Label, Icon, Select } from './Filter.styled';
+import { Label, Icon, Select } from './Filters.styled';
 
 const Filter = ({ filter, handleFilterChange }) => {
   return (

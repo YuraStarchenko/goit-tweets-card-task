@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { CardUsersList } from 'components/CardUsersList/CardUsersList';
-import Container from 'components/Container';
-import Filter from 'components/Filter';
-import ScrollToTopBtn from 'components/ScrollToTopBtn';
-import LoadMore from 'components/LoadMore';
-import Loader from 'components/Loader';
+import { Container } from '../../components/Container.styled';
+import Filter from '../../components/Filters/Filters';
+import ScrollToTopBtn from '../../components/ScrollBtn/ScrollBtn';
+import { LoadMore } from '../../components/LoadMore/LoadMore';
+import Loader from '../../components/Loader/Loader';
 import { BsArrowLeft } from 'react-icons/bs';
-import { getUsers } from 'api';
-import { getfilteredUsers } from 'helpers';
-import { Section, BackLinkHref, Wrapper, Info } from './Tweets.styled';
+import { getUsers } from '../../service/api';
+import { getfilterUser } from '../helps';
+import { Section, BackLinkHref, Wrapper, Info } from './Tweets.styled.js';
 
 export const Tweets = () => {
   const initialState = {
@@ -27,7 +27,7 @@ export const Tweets = () => {
 
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
-  const filteredUsers = getfilteredUsers(users, filter);
+  const filteredUsers = getfilterUser(users, filter);
 
   useEffect(() => {
     async function getUsersTweets() {

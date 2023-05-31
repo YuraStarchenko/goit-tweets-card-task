@@ -1,6 +1,6 @@
 import ScrollToTop from 'react-scroll-to-top';
 
-const ScrollToTopBtn = () => {
+export const ScrollBtn = () => {
   return (
     <ScrollToTop
       smooth
@@ -14,5 +14,3 @@ const ScrollToTopBtn = () => {
     />
   );
 };
-
-export default ScrollToTopBtn;
